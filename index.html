@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="#">
+              <img class="logo" src="images/logo.svg" alt="product-logo" />
+            </a>
+          </li>
+          <li><a class="main-nav-link" href="#">Collections</a></li>
+          <li><a class="main-nav-link" href="#">Men</a></li>
+          <li><a class="main-nav-link" href="#">Women</a></li>
+          <li><a class="main-nav-link" href="#">About</a></li>
+          <li><a class="main-nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-box">
+        <img src="images/icon-cart.svg" alt="" class="shopping" />
+        <img src="images/image-avatar.png" alt="" class="avatar" />
+      </div>
+    </header>
+
+    <div class="modal hidden">
+      <small class="cart-text">Cart</small>
+      <div class="cart-border"></div>
+      <p class="cart-description">Your cart is empty</p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <section class="section-hero">
+      <div class="hero">
+        <article class="product-img-box">
+          <img
+            src="images/image-product-1.jpg"
+            alt=""
+            class="product-main--img"
+          />
+        </article>
+        <article class="product-text-box">
+          <p class="procuct-text">Sneaker Company</p>
+          <h1 class="heading-primary">Fall Limited Edition Sneakers</h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="prices">
+            <small class="price">$125.00</small>
+            <small class="discount">50%</small>
+          </div>
+          <small class="old-price"> $250.00</small>
+
+          <div class="btns">
+            <div class="addAndRemove">
+              <button class="add-btn btn">
+                <img src="images/icon-minus.svg" alt="" />
+              </button>
+              <small>0</small>
+              <button class="remove-btn btn">
+                <img src="images/icon-plus.svg" alt="" />
+              </button>
+            </div>
+            <button class="cart-btn">
+              <img src="images/icon-cart.svg" alt="" class="cart-icon" /> Add to
+              cart
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
