@@ -19,3 +19,5 @@ const closeModal = function () {
 shoppingCart.addEventListener("click", openModel);
 avatar.addEventListener("click", openModel);
 overlay.addEventListener("click", closeModal);
+
+//1 Hover states

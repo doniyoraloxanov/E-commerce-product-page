@@ -56,10 +56,23 @@ body {
   text-decoration: none;
 }
 
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(219, 9%, 45%);
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .cart-box {
   display: flex;
   align-items: center;
   gap: 3.2rem;
+}
+
+.cart-box:hover,
+.cart-box:active {
+  color: hsl(219, 9%, 45%);
+  cursor: pointer;
 }
 
 .avatar {
@@ -93,6 +106,20 @@ body {
 .product-img-box {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.thumbnail-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
 }
 
 .procuct-text {
